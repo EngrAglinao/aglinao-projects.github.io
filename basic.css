@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box1 {
+  background: lightcoral;
+}
+
+.box2 {
+  background: lightblue;
+}
+
+.box3 {
+  background: lightgreen;
+}
+
+main {
+  display: grid;
+  /* values - % , px or fr */
+  /* ex 1fr - takes up all the available Space */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
