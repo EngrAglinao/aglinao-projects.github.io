@@ -17,9 +17,80 @@
 }
 
 main {
+  height: 100vh;
   display: grid;
   /* values - % , px or fr */
   /* ex 1fr - takes up all the available Space */
+
+  /* 1ST SITUATION */
+  /* grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr; */
+  /* 1ST SITUATION */
+
+  /* 2ND SITUATION */
+  /* grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr; */
+  /* 2ND SITUATION */
+
+  /* 3RD SITUATION */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box3";
+  /* align HORIZONTALY
+  justify-items: center;
+  algin VERTICALLY
+  align-items: center; */
+  /* "." dot is for an empty space*/
+  /* 3RD SITUATION */
 }
+
+/* 1ST SITUATION */
+/* .box3 {
+  -- long method
+  grid-column-start: 1;
+  grid-column-end: 3;
+  -- short method
+  grid-column: 1/3;
+} */
+
+/* Position of Box1 without this box2 will be displayed on the left side */
+/* .box1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.box2 {
+  grid-row: 1/3;
+} */
+/* 1ST SITUATION */
+
+/* 2ND SITUATION */
+/* .box1 {
+  grid-column: 1/2;
+  grid-row: 1/3;
+}
+
+.box2 {
+  grid-row: 2/4;
+}
+
+.box3 {
+  grid-column: 2/4;
+} */
+/* 2ND SITUATION */
+
+/* 3RD SITUATION */
+.box1 {
+  grid-area: box1;
+}
+
+.box2 {
+  grid-area: box2;
+}
+
+.box3 {
+  grid-area: box3;
+}
+/* 3RD SITUATION */
