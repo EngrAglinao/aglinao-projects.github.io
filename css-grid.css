@@ -16,15 +16,18 @@
   background: lightgreen;
 }
 
-main {
+.css-grid {
   height: 100vh;
   display: grid;
   /* REPEATING VALUE */
   /* grid-template-columns: repeat(3, 300px); */
 
-  /* Auto-fill VALUE */
+  /* Auto-fill or Auto-fit VALUE */
   /* fit on screen */
   /* grid-template-columns: repeat(auto-fill, 300px); */
+
+  /* minimum -maximum value */
+  /* grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
 
   /* ========================================= */
   /* values - % , px or fr */
