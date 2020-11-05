@@ -108,3 +108,54 @@
   grid-area: box3;
 }
 /* 3RD SITUATION */
+
+/* ============================================= */
+.flex-box {
+  height: 100vh;
+  border: 20px solid rgb(0, 0, 0);
+  display: flex;
+  /* flex-direction: row-reverse; - Reversing the position */
+  /* flex-direction: column;      - Positioning it on column Style */
+  /* flex-direction: row;         - Default- */
+
+  /* justify-content: flex-start; - Default */
+  /* justify-content: center;     - Positioned on Center  */
+  /* justify-content: space-between; - adding space between each element */
+  /* justify-content: space-around;  - adding space without equal spaces  */
+  /* justify-content: space-evenly;  - adding space evenly/equally  */
+
+  /* align-items: flex-start;     - Default */
+  /* align-items: center;         - Centering the element vertically and horizontaly  */
+  /* align-items: flex-end;       - aligns element on the bottom  */
+  /* align-items: stretch;        - Stretch Element if the element dont have height value  */
+
+  /* flex-wrap: wrap;             - Uses the default width and height value of the element  */
+  /* align-content: flex-start;   - removes the gap when we use flex-wrap: wrap  */
+
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.child1 {
+  width: 200px;
+  height: 200px;
+  background: rgb(39, 61, 134);
+}
+
+.child2 {
+  width: 200px;
+  height: 200px;
+  background: rgb(172, 57, 53);
+}
+
+.child3 {
+  width: 200px;
+  height: 200px;
+  background: rgb(149, 43, 140);
+}
+
+.child4 {
+  width: 200px;
+  height: 200px;
+  background: green;
+}
