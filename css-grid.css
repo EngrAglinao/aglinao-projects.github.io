@@ -19,6 +19,14 @@
 main {
   height: 100vh;
   display: grid;
+  /* REPEATING VALUE */
+  /* grid-template-columns: repeat(3, 300px); */
+
+  /* Auto-fill VALUE */
+  /* fit on screen */
+  /* grid-template-columns: repeat(auto-fill, 300px); */
+
+  /* ========================================= */
   /* values - % , px or fr */
   /* ex 1fr - takes up all the available Space */
 
@@ -27,11 +35,14 @@ main {
   grid-template-rows: 1fr 1fr; */
   /* 1ST SITUATION */
 
+  /* ========================================= */
+
   /* 2ND SITUATION */
   /* grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr; */
   /* 2ND SITUATION */
 
+  /* ========================================= */
   /* 3RD SITUATION */
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
